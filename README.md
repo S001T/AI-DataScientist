@@ -2,22 +2,6 @@
 
 AI-powered Data Analysis Framework for Python.
 
-## Features
-
-* CSV and Excel loading
-* Data Cleaning
-* Statistics Analysis
-* Correlation Analysis
-* Feature Engineering
-* AutoML
-* Data Visualization
-* OpenAI Integration
-* Claude Integration
-* Chat With Dataset
-* SQL Agent
-* HTML Reports
-* Streamlit Dashboard
-
 ## Installation
 
 ```bash
@@ -31,7 +15,7 @@ from aidatascientist import DataAgent
 
 agent = DataAgent()
 
-agent.load("data.csv")
+agent.load("Iris.csv")
 
 agent.clean()
 
@@ -40,38 +24,18 @@ stats = agent.analyze()
 print(stats)
 ```
 
-## AutoML Example
+## Features
 
-```python
-result = agent.train_model(
-    target="price"
-)
+* Data Cleaning
+* Statistics Analysis
+* AutoML
+* Data Visualization
+* OpenAI Integration
+* Claude Integration
+* Dataset Chat Agent
+* SQL Agent
+* Dashboard
 
-print(result)
-```
+## PyPI
 
-## AI Chat Example
-
-```python
-from aidatascientist.llm.openai_provider import OpenAIProvider
-
-provider = OpenAIProvider(
-    api_key="YOUR_API_KEY"
-)
-
-agent.connect_llm(provider)
-
-answer = agent.ask(
-    "Which features are most important?"
-)
-
-print(answer)
-```
-
-## Author
-
-Sarkis Tamaryan
-
-## License
-
-MIT
+https://pypi.org/project/aidatascientist/
