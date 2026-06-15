@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aidatascientist"
+version = "1.0.1"
+description = "AI Data Scientist Framework"
+readme = "README.md"
+authors = [
+    {name = "Sarkis Tamaryan"}
+]
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "openpyxl",
+    "openai",
+    "anthropic"
+]
